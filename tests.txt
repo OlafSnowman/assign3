@@ -1,8 +1,18 @@
 x canary
-x imperative fibonacci of 0 returns 1
-x imperative fibonacci of 1 returns 1
-x imperative fibonacci of 2 returns 2
-x imperative fibonacci of 3 returns 3
-x imperative fibonacci of 5 returns 8
-x imperative fibonacci of 9 returns 55
+x imperative fibonacci works at different positions
+    x imperative fibonacci of 0 returns 1
+    x imperative fibonacci of 1 returns 1
+    x imperative fibonacci of 2 returns 2
+    x imperative fibonacci of 3 returns 3
+    x imperative fibonacci of 5 returns 8
+    x imperative fibonacci of 9 returns 55
 x imperative fibonacci of a negative number throws an error
+
+x functional fibonacci works at different positions
+    x functional fibonacci of 0 returns 1
+    x functional fibonacci of 1 returns 1
+    x functional fibonacci of 2 returns 2
+    x functional fibonacci of 3 returns 3
+    x functional fibonacci of 5 returns 8
+    x functional fibonacci of 9 returns 55
+x functional fibonacci of a negative number throws an error

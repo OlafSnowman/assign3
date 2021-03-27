@@ -1,19 +1,21 @@
 package program;
 
-public class FibonacciImperative {
-  public int imperativeIteration(int number) {
-    if(number < 0) {
-      throw new RuntimeException("Invalid Number: " + number);
+public class FibonacciImperative implements Fibonacci{
+
+  @Override
+  public int fibonacci(int position) {
+    if(position < 0) {
+      throw new RuntimeException("Invalid Number: " + position);
     }
 
-    int fibOne = 1;
-    int fibTwo = 1;
-    int fibonacci = fibOne;
+    int previous = 1;
+    int current = 1;
+    int fibonacci = previous;
 
-    for (int i = 1; i < number; i++) {
-      fibonacci = fibOne + fibTwo;
-      fibOne = fibTwo;
-      fibTwo = fibonacci;
+    for (int i = 1; i < position; i++) {
+      fibonacci = previous + current;
+      previous = current;
+      current = fibonacci;
     }
 
     return fibonacci;
